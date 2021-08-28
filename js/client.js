@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000')
+const socket = io('http://localhost:3000' || process.env.PORT)
 
 const messagingContainer = document.querySelector('.chatting-container')
 const sendContainer = document.querySelector('.send-container')
